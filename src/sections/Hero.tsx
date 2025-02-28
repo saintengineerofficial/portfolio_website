@@ -1,3 +1,4 @@
+'use client'
 import memojiImage from '@/assets/images/memoji-computer.png'
 import grainImage from '@/assets/images/grain.jpg'
 import ArrowDown from '@/assets/icons/arrow-down.svg'
@@ -7,6 +8,11 @@ import { HeroOrbit } from '@/components/HeroOrbit'
 import Image from 'next/image'
 
 export const HeroSection = () => {
+
+  const handleGoEmail = () => {
+    window.location.href = 'mailto:zhihao_cai@163.com?subject=如果您觉得我符合贵公司技术要求,您可以想我发送面试邀请,感谢'
+  }
+
   return <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
     <div className="absolute  inset-0 -z-30 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
       <div className="absolute inset-0  opacity-5" style={{
@@ -35,7 +41,7 @@ export const HeroSection = () => {
           <div className="bg-green-500 size-2.5 rounded-full relative">
             <div className="bg-green-500 rounded-full animate-ping-large absolute inset-0"></div>
           </div>
-          <div className="text-sm font-semibold">Available for new projects</div>
+          <div className="text-sm font-semibold">Saint</div>
         </div>
       </div>
       <div className="max-w-lg mx-auto">
@@ -49,7 +55,7 @@ export const HeroSection = () => {
           <span className="font-semibold">Explore my work</span>
           <ArrowDown className="size-4" />
         </button>
-        <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl">
+        <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl" onClick={handleGoEmail}>
           <span>🙌</span>
           <span className="font-semibold">Lets work together</span>
         </button>

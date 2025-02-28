@@ -6,7 +6,9 @@ import HTMLIcon from '@/assets/icons/html5.svg';
 import CSSIcon from '@/assets/icons/css3.svg';
 import JavaScriptIcon from '@/assets/icons/square-js.svg';
 import ReactIcon from '@/assets/icons/react.svg';
-import ChromeIcon from '@/assets/icons/chrome.svg';
+import NextIcon from '@/assets/icons/next.svg';
+import NuxtIcon from '@/assets/icons/nuxt.svg';
+import VueIcon from '@/assets/icons/vue.svg';
 import GitHubIcon from '@/assets/icons/github.svg';
 import MapImage from '@/assets/images/map.png';
 import SmileEmoji from '@/assets/images/memoji-smile.png';
@@ -17,6 +19,27 @@ import { motion } from 'framer-motion';
 import { useRef } from 'react';
 
 const Toolbox = [
+
+  {
+    name: "React",
+    icon: ReactIcon,
+  },
+  {
+    name: "Next",
+    icon: NextIcon,
+  },
+  {
+    name: "Vue",
+    icon: VueIcon,
+  },
+  {
+    name: "Nuxt",
+    icon: NuxtIcon,
+  },
+  {
+    name: "GitHub",
+    icon: GitHubIcon,
+  },
   {
     name: "HTML5",
     icon: HTMLIcon,
@@ -28,18 +51,6 @@ const Toolbox = [
   {
     name: "JavaScript",
     icon: JavaScriptIcon,
-  },
-  {
-    name: "React",
-    icon: ReactIcon,
-  },
-  {
-    name: "Chrome",
-    icon: ChromeIcon,
-  },
-  {
-    name: "GitHub",
-    icon: GitHubIcon,
   },
 ];
 
@@ -80,7 +91,7 @@ const hoobies = [
 
 export const AboutSection = () => {
   const constraintsRef = useRef(null);
-  return <div className="py-20 lg:py-28">
+  return <div id="about" className="py-20 lg:py-28">
     <div className="container">
       <SectionHeader title="A Glimpse Into My World" eyebrow="About Me" description="Learn more about who I am,what I do,and what inspires me" />
       <div className="mt-20 flex flex-col gap-8">

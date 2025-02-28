@@ -1,6 +1,7 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import AwardWinningWebsite from "@/assets/images/AwardWinningWebsite.png";
+import Toppay from "@/assets/images/toppay.png";
+import ReactLibrary from "@/assets/images/ReactLibrary.png";
+import PortfolioWebsite from "@/assets/images/PortfolioWebsite.png";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowRightIcon from "@/assets/icons/arrow-up-right.svg";
 import Image from "next/image";
@@ -9,45 +10,58 @@ import { Card } from "@/components/Card";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    company: "Personal Project",
+    year: "2025",
+    title: "Award Winning Website",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "NextJs + TailwindCSS + Gsap" },
+      { title: "支持多端展示的响应式网站" },
+      { title: "炫酷的动画效果" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
+    link: "https://award-winning-website-lime.vercel.app/",
+    image: AwardWinningWebsite,
   },
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
-    results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
-    ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
-  },
-  {
-    company: "Quantum Dynamics",
+    company: "Personal Project",
     year: "2023",
-    title: "AI Startup Landing Page",
+    title: "Custom React Library",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "React + TypeScript + Dumi + Jest " },
+      { title: "一系列移动端常用的组件，包括布局、输入框、导航等" },
+      { title: "组件都提供了丰富的配置选项和样式自定义" },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    link: "https://czh13.github.io/czh_react_ui",
+    image: ReactLibrary,
   },
+  {
+    company: "Personal Project",
+    year: "2024",
+    title: "Portfolio Website",
+    results: [
+      { title: "NextJs + TailwindCSS" },
+      { title: "开发者最好的技能展示平台" },
+      { title: "自定义开发的炫酷动画效果" },
+    ],
+    link: "https://portfolio-website-saintengineerofficial.vercel.app",
+    image: PortfolioWebsite,
+  },
+  {
+    company: "深圳市宇创时代科技有限公司",
+    year: "2024",
+    title: "Toppay Landing Page",
+    results: [
+      { title: "NuxtJs + TailwindCSS + CSS(transition/animation)" },
+      { title: "多方位丰富的页面逻辑交互" },
+      { title: "全方位展示公司最好的产品/服务/文化" },
+    ],
+    link: "https://www.toppay.cc",
+    image: Toppay,
+  },
+
 ];
 
 export const ProjectsSection = () => {
-  return <section className="pb-16 lg:py-24">
+  return <section id='projects' className="pb-16 lg:py-24">
     <div className="container">
       <SectionHeader title="Featured Projects" eyebrow="Real-world Results" description="See how I had transformed concepts into engaging digital experiences." />
       <div className="flex flex-col gap-20 mt-10 md:mt-20">

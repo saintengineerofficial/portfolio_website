@@ -10,33 +10,33 @@ import { Fragment } from "react";
 
 const testimonials = [
   {
-    name: "Alex Turner",
-    position: "Marketing Manager @ TechStartups",
-    text: "Alex was instrumental in transforming our website into a powerful marketing tool. His attention to detail and ability to understand our brand is exceptional. We're thrilled with the results!",
+    name: "刘**",
+    position: "后端开发工程师",
+    text: "Saint 在将我们的网站转变为强大的营销工具方面发挥了重要作用。他对细节的关注和对我们品牌的理解能力非常出色。我们对结果感到非常满意！",
     avatar: memojiAvatar1,
   },
   {
-    name: "Olivia Green",
-    position: "Head of Design @ GreenLeaf",
-    text: "Working with Alex was a pleasure. His expertise in frontend development brought our designs to life in a way we never imagined. The website has exceeded our expectations.",
+    name: "谢**",
+    position: "产品经理",
+    text: "与 Saint 合作非常愉快。他在前端开发方面的专业知识使我们的设计以我们从未想象过的方式栩栩如生。该网站超出了我们的预期。",
     avatar: memojiAvatar2,
   },
   {
-    name: "Daniel White",
-    position: "CEO @ InnovateCo",
-    text: "Alex's ability to create seamless user experiences is unmatched. Our website has seen a significant increase in conversions since launching the new design. We couldn't be happier.",
+    name: "蔡**",
+    position: "项目组长",
+    text: "Saint 创造无缝用户体验的能力无与伦比。自推出新设计以来，我们的网站转化率显著提高。我们非常高兴。",
     avatar: memojiAvatar3,
   },
   {
-    name: "Emily Carter",
-    position: "Product Manager @ GlobalTech",
-    text: "Alex is a true frontend wizard. He took our complex product and transformed it into an intuitive and engaging user interface. We're already seeing positive feedback from our customers.",
+    name: "谭**",
+    position: "前端负责人",
+    text: "Saint 是一位真正的前端人才。他将我们复杂的产品改造成直观且引人入胜的用户界面。我们已经看到了客户的积极反馈。",
     avatar: memojiAvatar4,
   },
   {
-    name: "Michael Brown",
-    position: "Director of IT @ MegaCorp",
-    text: "Alex's work on our website has been nothing short of exceptional. He's a talented developer who is also a great communicator. We highly recommend him.",
+    name: "后端开发工程师",
+    position: "陈**",
+    text: "Saint 在我们网站上的工作非常出色。他是一位才华横溢的开发人员，也是一位出色的沟通者。我们强烈推荐他。",
     avatar: memojiAvatar5,
   },
 ];
