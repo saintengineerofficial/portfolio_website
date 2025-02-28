@@ -5,7 +5,7 @@ const links = [
   { name: 'GitHub', href: 'https://github.com/saintengineerofficial' },
   { name: '稀土掘金', href: 'https://juejin.cn/user/1864415033966120' },
   { name: '18025252853', href: '#' },
-  { name: 'zhihao_cai@163.com', href: 'mailto:zhihao_cai@163.com?subject=如果您觉得我符合贵公司技术要求,您可以想我发送面试邀请,感谢' },
+  { name: 'zhihao_cai@163.com', href: 'mailto:zhihao_cai@163.com?subject=如果您觉得我符合贵公司技术要求,您可以向我发送面试邀请,感谢' },
 ]
 
 export const Footer = () => {

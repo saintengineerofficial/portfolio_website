@@ -4,7 +4,7 @@ import grainImage from '@/assets/images/grain.jpg'
 
 export const ContactSection = () => {
   const handleGoEmail = () => {
-    window.location.href = 'mailto:zhihao_cai@163.com?subject=如果您觉得我符合贵公司技术要求,您可以想我发送面试邀请,感谢'
+    window.location.href = 'mailto:zhihao_cai@163.com?subject=如果您觉得我符合贵公司技术要求,您可以向我发送面试邀请,感谢'
   }
   return <div id='contact' className="py-16 pt-12 lg:py-24 lg:pt-20">
     <div className="container">
