@@ -1,24 +1,27 @@
-import { AboutSection } from "@/sections/About";
-import { ContactSection } from "@/sections/Contact";
-import { Footer } from "@/sections/Footer";
-import { Header } from "@/sections/Header";
-import { HeroSection } from "@/sections/Hero";
-import { ProjectsSection } from "@/sections/Projects";
-import { TapeSection } from "@/sections/Tape";
-import { TestimonialsSection } from '@/sections/Testimonials';
+import LoadingGuard from "@/components/global/LoadingGuard";
+import { AboutSection } from "@/components/home/About";
+import { ContactSection } from "@/components/home/Contact";
+import { Footer } from "@/components/home/Footer";
+import { Header } from "@/components/home/Header";
+import { HeroSection } from "@/components/home/Hero";
+import { ProjectsSection } from "@/components/home/Projects";
+import { TapeSection } from "@/components/home/Tape";
+import { TestimonialsSection } from '@/components/home/Testimonials';
+import { ReactLenis } from "lenis/react";
 
 export default function Home() {
   return (
-    <div>
-      <Header />
-      <HeroSection />
-      <ProjectsSection />
-      <TapeSection />
-      <TestimonialsSection />
-      <AboutSection />
-      <ContactSection />
-      <Footer />
-    </div>
+    <ReactLenis root className='tracking-wider'>
+      <LoadingGuard>
+        <Header />
+        <HeroSection />
+        <ProjectsSection />
+        <TapeSection />
+        <TestimonialsSection />
+        <AboutSection />
+        <ContactSection />
+        <Footer />
+      </LoadingGuard>
+    </ReactLenis>
   );
 }
-

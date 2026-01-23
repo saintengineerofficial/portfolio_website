@@ -19,74 +19,23 @@ import { motion } from 'framer-motion';
 import { useRef } from 'react';
 
 const Toolbox = [
-
-  {
-    name: "React",
-    icon: ReactIcon,
-  },
-  {
-    name: "Next",
-    icon: NextIcon,
-  },
-  {
-    name: "Vue",
-    icon: VueIcon,
-  },
-  {
-    name: "Nuxt",
-    icon: NuxtIcon,
-  },
-  {
-    name: "GitHub",
-    icon: GitHubIcon,
-  },
-  {
-    name: "HTML5",
-    icon: HTMLIcon,
-  },
-  {
-    name: "CSS3",
-    icon: CSSIcon,
-  },
-  {
-    name: "JavaScript",
-    icon: JavaScriptIcon,
-  },
+  { name: "React", icon: ReactIcon },
+  { name: "Next", icon: NextIcon },
+  { name: "Vue", icon: VueIcon },
+  { name: "Nuxt", icon: NuxtIcon },
+  { name: "GitHub", icon: GitHubIcon },
+  { name: "HTML5", icon: HTMLIcon },
+  { name: "CSS3", icon: CSSIcon },
+  { name: "JavaScript", icon: JavaScriptIcon },
 ];
 
 const hoobies = [
-  {
-    name: "Reading",
-    icon: '🙌',
-    left: '5%',
-    top: '5%',
-  },
-  {
-    name: "Music",
-    icon: '🎸',
-    left: '50%',
-    top: '5%',
-  },
-  {
-    name: "Gaming",
-    icon: '🎮', left: '50%',
-    top: '35%',
-  },
-  {
-    name: "Coding",
-    icon: '💻', left: '10%',
-    top: '20%',
-  },
-  {
-    name: "Cooking",
-    icon: '🍳', left: '20%',
-    top: '65%',
-  },
-  {
-    name: "Traveling",
-    icon: '🌍', left: '50%',
-    top: '65%',
-  },
+  { name: "Reading", icon: '🙌', left: '5%', top: '5%' },
+  { name: "Music", icon: '🎸', left: '50%', top: '5%' },
+  { name: "Gaming", icon: '🎮', left: '50%', top: '35%' },
+  { name: "Coding", icon: '💻', left: '10%', top: '20%' },
+  { name: "Cooking", icon: '🍳', left: '20%', top: '65%' },
+  { name: "Traveling", icon: '🌍', left: '50%', top: '65%' },
 ]
 
 export const AboutSection = () => {

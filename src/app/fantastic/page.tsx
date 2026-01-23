@@ -1,0 +1,68 @@
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { ArrowRight, ArrowUpRight, Bookmark } from "lucide-react";
+
+const animations = [
+  { link: "/timelineScroll", title: "TimelineScroll" },
+  { link: "/cardsStack", title: "CardsStack" },
+  { link: "/scrollMagic", title: "ScrollMagic" },
+  { link: "/landingPageReveal", title: "LandingPageReveal" },
+  { link: "/smoothScroll", title: "SmoothScroll" },
+];
+
+const Fantastic = () => {
+  return (
+    <div className='bg-[#f7f7f7] py-[10px]'>
+      <div className='max-w-[1500px]px mx-auto w-full px-[10px]'>
+        <section></section>
+        <section className='grid grid-cols-3 gap-[5px]'>
+          {animations.map(a => (
+            <div key={a.title}>
+              <Link href={`fantastic/${a.link}`}>
+                <div className='relative group overflow-hidden'>
+                  <div
+                    className='absolute inset-0 w-full h-full opacity-0 transition-opacity duration-300
+                  group-hover:opacity-100 flex items-center justify-center rounded-3xl shadow-lg overflow-hidden'>
+                    <div className='text-black bg-white px-[5px] py-[3px] rounded-lg flex items-center gap-[1px] transition-all duration-300  hover:bg-[#313131] hover:text-white'>
+                      <ArrowRight className='size-5' />
+                      <span className='text-sm'>Preview</span>
+                    </div>
+                    <div className='absolute bottom-0 w-full px-[8px] flex items-center justify-between bg-white/40 backdrop-blur-sm shadow-lg overflow-hidden'>
+                      <div className='flex flex-col gap-[2px]'>
+                        <span className='text-sm'>CASE</span>
+                        <p className='font-semibold text-xl'>{a.title}</p>
+                      </div>
+                      <div className='flex items-center gap-[2px]'>
+                        <ArrowUpRight className='size-8' />
+                        <Bookmark className='size-7' />
+                      </div>
+                    </div>
+                  </div>
+                  <iframe src={`fantastic/${a.link}`} title='page preview' className='w-full h-[400px] rounded-3xl overflow-hidden pointer-events-none ' />
+                </div>
+                <div className='flex items-center gap-[2px] text-black mt-[4px]'>
+                  <h3 className='text-xl font-semibold'>{a.title}</h3>
+                  <div className='flex items-center gap-[2px]'>
+                    <small>by</small>
+                    <div className='flex items-center gap-[2px]'>
+                      <Image src='/fantastic/as.png' alt='as' width={32} height={32} className='rounded-full' />
+                      <strong
+                        className='text-xl font-semibold relative whitespace-nowrap before:transition-all before:duration-300 
+                      before:absolute before:left-0 before:-bottom-[1px] before:w-full before:h-[2px] before:bg-gray-300 before:scale-x-0 before:origin-left
+                      hover:before:bg-gray-900 hover:before:scale-x-100'>
+                        Saint Engineer Official
+                      </strong>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          ))}
+        </section>
+      </div>
+    </div>
+  );
+};
+
+export default Fantastic;
