@@ -125,10 +125,10 @@ const HomeEntranceReveal = ({ children }: PropsWithChildren) => {
   return (
     <div
       ref={containerRef}
-      className="relative w-full overflow-hidden [&_.line]:translate-y-full [&_.line]:[will-change:transform]"
+      className="relative w-full [&_.line]:translate-y-full [&_.line]:[will-change:transform]"
     >
       <div className="preloader fixed left-0 top-0 z-[50] flex h-[100svh] w-full items-center overflow-hidden bg-black px-[8px] text-white [clip-path:polygon(0%_0%,_100%_0%,_100%_100%,_0%_100%)] [will-change:clip-path] max-[1000px]:flex-col">
-        <div className="preloader-revealer absolute left-1/2 top-1/2 z-[2] aspect-square w-full -translate-x-1/2 -translate-y-1/2 scale-0 bg-[#5b553b] [will-change:transform] max-[1000px]:w-[300%]" />
+        <div className="preloader-revealer absolute left-1/2 top-1/2 z-[2] aspect-square w-full -translate-x-1/2 -translate-y-1/2 scale-0 bg-[#202a37] [will-change:transform] max-[1000px]:w-[300%]" />
 
         <div className="preloader-copy flex flex-1 max-[1000px]:flex-col">
           <div className="preloader-copy-col flex flex-1 max-[1000px]:items-center">
