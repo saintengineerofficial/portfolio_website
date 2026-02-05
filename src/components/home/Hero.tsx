@@ -10,7 +10,7 @@ import Image from 'next/image'
 export const HeroSection = () => {
 
   const handleGoEmail = () => {
-    window.location.href = 'mailto:zhihao_cai@163.com?subject=如果您觉得我符合贵公司技术要求,您可以向我发送面试邀请,感谢'
+    window.location.href = 'mailto:saintengineerofficial@gmail.com?subject=如果您觉得我符合贵公司技术要求,您可以向我发送面试邀请,感谢'
   }
 
   return <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">

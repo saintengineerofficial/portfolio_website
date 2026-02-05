@@ -8,8 +8,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
 const cagliostro = Cagliostro({ subsets: ['latin'], variable: '--font-serif', weight: ['400'] })
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
-  description: "Created with the help of Frontend Tribe",
+  title: "Saintengineerofficial",
 };
 
 export default function RootLayout({
