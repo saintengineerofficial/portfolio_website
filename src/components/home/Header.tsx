@@ -18,7 +18,11 @@ const navs = [
 ]
 
 const urls = [
+  { herf: 'https://library.saintengineerofficial.online/', title: 'library', desc: 'Radix UI + Next.js的二次封装组件库' },
   { herf: 'https://totoai.saintengineerofficial.online/', title: 'totoai', desc: '' },
+  { herf: 'https://rag.saintengineerofficial.online/', title: 'Deep Research Web RAG Agent', desc: '自动化检索 + 报告生成' },
+  { herf: 'https://repaid-website.vercel.app/', title: 'Landing Page', desc: '支付类官网' },
+  { herf: 'https://award-winning-website-lime.vercel.app/', title: 'GSAP Work', desc: 'GSAP动画官网' },
 ]
 
 export const Header = () => {
@@ -41,14 +45,25 @@ export const Header = () => {
                         <div className='h-[1px] w-full bg-white/80 absolute bottom-0 left-0 origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100'></div>
                       </div>
                     </PopoverTrigger>
-                    <PopoverContent className="w-80">
+                    <PopoverContent className="w-80 rounded-2xl border border-neutral-200/70 bg-white p-3 shadow-[0_10px_40px_-18px_rgba(0,0,0,0.25)]">
                       <div className="grid gap-4">
-                        <div className="space-y-2">
-                          <h4 className="leading-none font-medium">Dimensions</h4>
-                          <p className="text-muted-foreground text-sm">
-                            Set the dimensions for the layer.
-                          </p>
-                        </div>
+                        {
+                          urls.map((url, index) => (
+                            <Link
+                              key={index}
+                              href={url.herf}
+                              target="_blank"
+                              className="group block space-y-2 rounded-xl px-3 py-2 transition-colors duration-200 hover:bg-neutral-200"
+                            >
+                              <h4 className="leading-none font-semibold text-neutral-900 transition-colors group-hover:text-neutral-950">
+                                {url.title}
+                              </h4>
+                              <p className="text-sm text-neutral-500 transition-colors group-hover:text-neutral-700">
+                                {url.desc}
+                              </p>
+                            </Link>
+                          ))
+                        }
                       </div>
                     </PopoverContent>
                   </Popover>
@@ -66,15 +81,17 @@ export const Header = () => {
                         <div className='h-[1px] w-full bg-white/80 absolute bottom-0 left-0 origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100'></div>
                       </div>
                     </PopoverTrigger>
-                    <PopoverContent className="w-80">
+                    <PopoverContent className="w-80 rounded-2xl border border-neutral-200/70 bg-white p-3 shadow-[0_10px_40px_-18px_rgba(0,0,0,0.25)]">
                       <div className="grid gap-4">
                         <div className="space-y-2">
-                          <Link href={nav.herf} className="bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-transparent font-semibold">
+                          <Link href={nav.herf} className="block rounded-lg px-3 py-2 font-semibold text-neutral-900 hover:bg-neutral-50">
                             library(Radix UI/Next)
                           </Link>
                         </div>
                         <div className="space-y-2">
-                          <Link href='https://czh13.github.io/czh_react_ui/' className="leading-none font-medium">library(React)</Link>
+                          <Link href='https://czh13.github.io/czh_react_ui/' className="block rounded-lg px-3 py-2 font-medium text-neutral-900 hover:bg-neutral-50">
+                            library(React)
+                          </Link>
                         </div>
                       </div>
                     </PopoverContent>
