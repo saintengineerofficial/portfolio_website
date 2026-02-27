@@ -42,10 +42,7 @@ const HomeEntranceReveal = ({ children }: PropsWithChildren) => {
 
         const jump = () => {
           step += 1;
-          const value =
-            step === totalSteps
-              ? 100
-              : Math.min(Math.floor((step / totalSteps) * 100 + Math.random() * 8), 99);
+          const value = step === totalSteps ? 100 : Math.min(Math.floor((step / totalSteps) * 100 + Math.random() * 8), 99);
 
           el.textContent = value.toString().padStart(2, "0");
 
@@ -123,35 +120,29 @@ const HomeEntranceReveal = ({ children }: PropsWithChildren) => {
   }, []);
 
   return (
-    <div
-      ref={containerRef}
-      className="relative w-full [&_.line]:translate-y-full [&_.line]:[will-change:transform]"
-    >
-      <div className="preloader fixed left-0 top-0 z-[50] flex h-[100svh] w-full items-center overflow-hidden bg-black px-[8px] text-white [clip-path:polygon(0%_0%,_100%_0%,_100%_100%,_0%_100%)] [will-change:clip-path] max-[1000px]:flex-col">
-        <div className="preloader-revealer absolute left-1/2 top-1/2 z-[2] aspect-square w-full -translate-x-1/2 -translate-y-1/2 scale-0 bg-[#202a37] [will-change:transform] max-[1000px]:w-[300%]" />
+    <div ref={containerRef} className='relative w-full [&_.line]:translate-y-full [&_.line]:[will-change:transform]'>
+      <div className='preloader fixed left-0 top-0 z-[50] flex h-[100svh] w-full items-center overflow-hidden bg-black px-[8px] text-white [clip-path:polygon(0%_0%,_100%_0%,_100%_100%,_0%_100%)] [will-change:clip-path] max-[1000px]:flex-col'>
+        <div className='preloader-revealer absolute left-1/2 top-1/2 z-[2] aspect-square w-full -translate-x-1/2 -translate-y-1/2 scale-0 bg-[#202a37] [will-change:transform] max-[1000px]:w-[300%]' />
 
-        <div className="preloader-copy flex flex-1 max-[1000px]:flex-col">
-          <div className="preloader-copy-col flex flex-1 max-[1000px]:items-center">
-            <p className="w-3/4 text-[0.8rem] font-medium uppercase leading-none tracking-[-0.0125rem] text-white max-[1000px]:w-full">
-              Handpicked collections shaped by artistry, balancing rare elements with a focus on
-              purity.
+        <div className='preloader-copy flex flex-1 max-[1000px]:flex-col'>
+          <div className='preloader-copy-col flex flex-1 max-[1000px]:items-center'>
+            <p className='w-3/4 text-[0.8rem] font-medium uppercase leading-none tracking-[-0.0125rem] text-white max-[1000px]:w-full'>
+              Curated projects that solve real problems with clear, practical outcomes.
             </p>
           </div>
-          <div className="preloader-copy-col flex flex-1 max-[1000px]:items-center">
-            <p className="w-3/4 text-[0.8rem] font-medium uppercase leading-none tracking-[-0.0125rem] text-white max-[1000px]:w-full">
-              Explore timeless essentials built with care, thoughtfully designed to guide you.
+          <div className='preloader-copy-col flex flex-1 max-[1000px]:items-center'>
+            <p className='w-3/4 text-[0.8rem] font-medium uppercase leading-none tracking-[-0.0125rem] text-white max-[1000px]:w-full'>
+              End-to-end work from concept to launch, showing process and execution.
             </p>
           </div>
         </div>
 
-        <div className="preloader-counter flex flex-1 justify-end max-[1000px]:items-center">
-          <p className="text-[0.8rem] font-medium uppercase leading-none tracking-[-0.0125rem] text-white">
-            00
-          </p>
+        <div className='preloader-counter flex flex-1 justify-end max-[1000px]:items-center'>
+          <p className='text-[0.8rem] font-medium uppercase leading-none tracking-[-0.0125rem] text-white'>00</p>
         </div>
       </div>
 
-      <div className="home-reveal-content">{children}</div>
+      <div className='home-reveal-content'>{children}</div>
     </div>
   );
 };
